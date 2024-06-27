@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+
+.converter {
+  display: flex;
+  justify-content: space-around;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input__element {
+
+  &.error {
+    color: red;
+  }
+}
+
+.input__error {
+  display: none;
+  color: red;
+
+
+  &.error {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .converter {
+    flex-direction: column;
+    margin: 0 20px;
+
+  }
+}
